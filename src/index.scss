@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(33, 33, 34);
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+#root {
+    min-height: 100dvh;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgb(48, 48, 48);
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 600px;
+
+    .items {
+
+        .item {
+            position: relative;
+            padding: 6px 10px 10px;
+            background-color: rgba(white, 0.04);
+            border-radius: 10px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            .close_btn {
+                position: absolute;
+                top: 6px;
+                right: 6px;
+                width: 14px;
+                height: 14px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 0;
+                display: inline-flex;
+
+                svg {
+                    height: auto;
+
+                    line {
+                        stroke: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .show_btn {
+        margin: 20px auto 0;
+        display: block;
+        width: 200px;
+        height: 44px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: rgb(78, 78, 252);
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+        outline: none;
+        border: 2px solid rgb(78, 78, 252);
+
+        &:hover {
+            background-color: transparent;
+            color: rgb(78, 78, 252);
+        }
+    }
+}
